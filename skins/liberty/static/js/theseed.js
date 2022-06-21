@@ -62,14 +62,14 @@ $(function() {
 	$("#searchSearchButton").click(function () {
 		var val = $("#searchInput").val();
 		if (val.length > 0) {
-			location.href = "/w/" + encodeURIComponent(val);
+			location.href = "/search/" + encodeURIComponent(val);
 		}
 	});
 
 	$("#searchGoButton").click(function () {
 		var val = $("#searchInput").val();
 		if (val.length > 0) {
-			location.href = "/w/" + encodeURIComponent(val);
+			location.href = "/search/" + encodeURIComponent(val);
 		}
 	});
 

@@ -1,5 +1,5 @@
 
 @echo off
 :abcsd
-lt --port 80 --subdomain geunyang
+localshare
 goto :abcsd

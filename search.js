@@ -66,7 +66,7 @@ String.prototype.replaceAll = function(tofind, replacewith, matchcase = 1) {
 const express = require('express');
 const server = express();
 
-server.get(/^\/ws\/(.*)/, async(req, res) => {
+server.get(/^\/search\/(.*)/, async(req, res) => {
 	const query = req.params[0];
 	const page = Number(req.query['page'] || '1');
 	var limit = 0;
@@ -84,6 +84,6 @@ server.get(/^\/ws\/(.*)/, async(req, res) => {
 	res.json(ret);
 });
 
-server.listen(25005, '127.5.5.5', e => {
+server.listen(25005, '127.0.0.1', e => {
 	print('실행 중.');
 });
